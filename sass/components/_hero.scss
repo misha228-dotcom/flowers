@@ -1,0 +1,18 @@
+.hero {
+        padding-top: 44px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+       &__img{
+        object-fit: cover;
+       }
+
+       &__title{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        font-size: 52px;
+       }
+}

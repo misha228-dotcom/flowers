@@ -1,0 +1,130 @@
+@charset "UTF-8";
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* ширина елемента включає padding і border */
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  /* прибирає зайвий відступ знизу */
+  max-width: 100%;
+  /* зображення не виходять за межі контейнера */
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.header {
+  margin-top: 16px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .header {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .header {
+    margin-top: 28px;
+  }
+}
+
+.call {
+  display: flex;
+  gap: 14px;
+}
+
+.burger-menu_btn {
+  display: block;
+}
+@media (min-width: 768px) {
+  .burger-menu_btn {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header-nav {
+    display: block;
+  }
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+@media (min-width: 1280px) {
+  .header-list {
+    gap: 48px;
+  }
+}
+
+.header-link {
+  font-size: 20px;
+}
+
+.hero {
+  padding-top: 44px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 52px;
+}/*# sourceMappingURL=main.css.map */
