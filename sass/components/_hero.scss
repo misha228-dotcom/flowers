@@ -1,18 +1,47 @@
 .hero {
+        
         padding-top: 44px;
+        padding-bottom: 40px;
         position: relative;
-        display: flex;
+        
+
+        &-container{
+                display: flex;
         justify-content: space-between;
         align-items: center;
+        }
 
-       &__img{
-        object-fit: cover;
+        &-text{
+                 @media (min-width:768px){
+            width: 390px;    
+        }
+                
+        }
+
+       &-img{
+        border-radius: 226px;
+        width: 145px;
+        @media (min-width:768px){
+            width: 390px;    
+        }
        }
 
-       &__title{
+
+       &-shop-img{
+        @media (min-width:768px){
+            width: 145px;    
+        }
+       }
+
+       &-title{
         position: absolute;
-        bottom: 20px;
+        bottom: 0;
         left: 50%;
+        transform: translateX(-50%);
         font-size: 52px;
+        font-weight: 400;
+         @media (min-width:768px){
+           font-size: 120px;   
+        }
        }
 }
